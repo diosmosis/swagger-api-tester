@@ -34,5 +34,6 @@ function normalizeOutput(output) {
   result = result.replace(/\([0-9]+m?s\)/g, '')
   result = result.replace(/\n\n\n+/g, '\n\n')
   result = result.replace(/^\s+$/gm, '')
+  result = result.replace(/([^\s])[ \t]+$/gm, '$1')
   return result
 }
