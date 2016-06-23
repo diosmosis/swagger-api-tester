@@ -34,6 +34,9 @@
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.9.2",
     "mocha": "^2.5.3",
+    "request-promise": "^3.0.0",
+    "swagger-model-validator": "^2.0.7",
+    "swagger-parser": "^4.0.0-beta.2",
     "swagger-validate": "^0.1.7"
   }
 }
