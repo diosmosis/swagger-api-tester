@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/diosmosis/swagger-api-tester.svg?branch=master)](https://travis-ci.org/diosmosis/swagger-api-tester)
+
 # swagger-api-tester
 
 Create lightweight smoke tests against HTTP APIs using swagger docs to inform validations.
