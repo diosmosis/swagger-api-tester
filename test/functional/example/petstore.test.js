@@ -28,9 +28,7 @@ describe('PetStore Example', function () {
   }
 
   test.post('/pet', pet).respondsWith(200, 'Pet')
-
   test.put('/pet', pet).respondsWith(200)
-  test.put('/pet', Object.assign({}, pet, { status: 'guarding' })).respondsWith(200, 'Pet')
 
-  // TODO let's fill this out later
+  test.get('/pet/20').respondsWith(200)
 })
