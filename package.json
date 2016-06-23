@@ -1,0 +1,37 @@
+{
+  "name": "swagger-api-tester",
+  "version": "1.0.0",
+  "description": "Generates lightweight mocha smoke tests against HTTP APIs using swagger docs to inform validations.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diosmosis/swagger-api-tester.git"
+  },
+  "keywords": [
+    "swagger",
+    "mocha",
+    "smoke",
+    "test",
+    "REST",
+    "HTTP",
+    "API"
+  ],
+  "author": "diosmosis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diosmosis/swagger-api-tester/issues"
+  },
+  "homepage": "https://github.com/diosmosis/swagger-api-tester#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "co-mocha": "^1.1.2",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "mocha": "^2.5.3",
+    "swagger-validate": "^0.1.7"
+  }
+}
