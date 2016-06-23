@@ -4,7 +4,9 @@
   "description": "Generates lightweight mocha smoke tests against HTTP APIs using swagger docs to inform validations.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require co-mocha ./test/**/*.spec.js",
+    "lint": "eslint .",
+    "prepublish": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
