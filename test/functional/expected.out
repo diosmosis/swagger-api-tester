@@ -1,12 +1,12 @@
 
   PetStore Example
-POST http://petstore.swagger.io/v2/pet returned {"id":7897897894564758000,"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
+POST http://petstore.swagger.io/v2/pet returned {"id":8400394378784934000,"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
 Validating against model.
-    ✓ should respond to POST /pet correctly
-PUT http://petstore.swagger.io/v2/pet returned {"id":7897897894564758000,"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
-    ✓ should respond to PUT /pet correctly
+    ✓ should respond to POST /pet correctly
+PUT http://petstore.swagger.io/v2/pet returned {"id":8400394378784934000,"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
+    ✓ should respond to PUT /pet correctly
 GET http://petstore.swagger.io/v2/pet/20 returned {"id":20,"category":{"id":20,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":20,"name":"string"}],"status":"available"}
 Validating against model.
-    ✓ should respond to GET /pet/20 correctly
+    ✓ should respond to GET /pet/20 correctly
 
   3 passing

@@ -35,5 +35,6 @@ function normalizeOutput(output) {
   result = result.replace(/\n\n\n+/g, '\n\n')
   result = result.replace(/^\s+$/gm, '')
   result = result.replace(/([^\s])[ \t]+$/gm, '$1')
+  result = result.replace(/\r/g, '')
   return result
 }
