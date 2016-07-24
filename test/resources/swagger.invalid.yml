@@ -1,0 +1,19 @@
+---
+swagger: "2.0"
+info:
+  description: "valid swagger"
+  version: "1.0.0"
+  title: "valid swagger"
+basePath: "/v2"
+paths:
+  /pet:
+    post:
+      summary: "some post"
+      description: ""
+      operationId: "somePost"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"

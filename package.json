@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint && mocha --require co-mocha ./test/**/*.spec.js"
+    "test-all": "mocha --require co-mocha ./test/**/*.spec.js",
+    "test": "npm run lint && npm run test-all"
   },
   "repository": {
     "type": "git",
@@ -38,5 +39,9 @@
     "swagger-parser": "^4.0.0-beta.2",
     "swagger-validate": "^0.1.7",
     "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.6.1",
+    "nock": "^8.0.0"
   }
 }
