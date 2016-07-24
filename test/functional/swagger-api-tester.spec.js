@@ -36,5 +36,9 @@ function normalizeOutput(output) {
   result = result.replace(/^\s+$/gm, '')
   result = result.replace(/([^\s])[ \t]+$/gm, '$1')
   result = result.replace(/\r/g, '')
+
+  // remove ids that change on each test execution
+  result = result.replace(/"id":[0-9][0-9]+,/g, '"id":__id__')
+
   return result
 }
