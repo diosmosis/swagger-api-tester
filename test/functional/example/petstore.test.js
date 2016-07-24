@@ -1,9 +1,11 @@
 'use strict'
 
-const Tester = require('../../../lib')
+const expect = require('chai').expect
+const TestGenerator = require('../../../lib')
 
 describe('PetStore Example', function () {
-  const test = new Tester('http://petstore.swagger.io/v2/swagger.json')
+  const generate = new TestGenerator('http://petstore.swagger.io/v2/swagger.json')
+  const test = generate.tester()
   const pet = {
     category: {
       id: 1,
@@ -27,8 +29,19 @@ describe('PetStore Example', function () {
     status: 'pending',
   }
 
-  test.post('/pet', pet).respondsWith(200, 'Pet')
-  test.put('/pet', pet).respondsWith(200)
+  generate.put('/pet', pet).respondsWith(200)
+  generate.get('/pet/20').respondsWith(200)
 
-  test.get('/pet/20').respondsWith(200)
+  let createdPetId
+  it('should let me create my own tests', function * () {
+    const response = yield test.post('/pet', pet).respondsWith(200, 'Pet')
+    createdPetId = response.id
+
+    expect(createdPetId).to.be.ok
+  })
+
+  it('should let me use test responses', function * () {
+    // the petstore API responds w/ 404 for some reason...
+    yield test.del(`/pet/${createdPetId}`).respondsWith(404)
+  })
 })

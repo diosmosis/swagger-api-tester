@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint && mocha --require co-mocha ./test/**/*.spec.js"
+    "test-all": "mocha --require co-mocha ./test/**/*.spec.js",
+    "test": "npm run lint && npm run test-all"
   },
   "repository": {
     "type": "git",

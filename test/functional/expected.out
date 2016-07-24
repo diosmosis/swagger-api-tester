@@ -1,12 +1,14 @@
 
   PetStore Example
-POST http://petstore.swagger.io/v2/pet returned {"id":__id__"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
-Validating against model.
-    ✓ should respond to POST /pet correctly
 PUT http://petstore.swagger.io/v2/pet returned {"id":__id__"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
     ✓ should respond to PUT /pet correctly
 GET http://petstore.swagger.io/v2/pet/20 returned {"id":__id__"category":{"id":__id__"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":__id__"name":"string"}],"status":"available"}
 Validating against model.
     ✓ should respond to GET /pet/20 correctly
+POST http://petstore.swagger.io/v2/pet returned {"id":__id__"category":{"id":1,"name":"Sentient Dogs"},"name":"Sprocket","photoUrls":["http://docspics.com/sprocket/1","http://docspics.com/sprocket/2"],"tags":[{"id":1,"name":"best pet ever"},{"id":2,"name":"monster from outer space"}],"status":"pending"}
+Validating against model.
+    ✓ should let me create my own tests
+DELETE http://petstore.swagger.io/v2/pet/8400394378784936000 returned undefined
+    ✓ should let me use test responses
 
-  3 passing
+  4 passing
